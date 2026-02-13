@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salem Cyber</title>
+  <meta name="description" content="An AI-powered virtual cyber analyst that collaborates with defenders to investigate and identify cyber attacks.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            grey900: "#0c1724",
+            accentBlue: "#002d3e",
+            salemGreen: "#1996a8",
+            salemGreenHover: "#0b7f8f",
+            salemOrange: "#e9a700",
+            whiteSmoke: "#f4f4f4",
+            slateBlock: "#f5f7fa",
+            inputBorder: "#253b50",
+            inputText: "#687b91",
+            line: "#e0e6ec",
+            bodyText: "#212121"
+          },
+          fontFamily: {
+            sans: ["Work Sans", "ui-sans-serif", "system-ui", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white font-sans text-bodyText antialiased">
+  <div class="bg-salemOrange px-4 py-2 text-center text-sm text-grey900">
+    <a href="https://www.salemcyber.com/post/salem-3-0-salem-works-where-you-work" class="font-semibold hover:underline">Meet Salem 3.0! Learn how we&apos;re improving SOC workflows and reducing MTTR</a>
+  </div>
+
+  <header class="sticky top-0 z-30 border-b border-line bg-white/95 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <a href="https://www.salemcyber.com/" class="inline-flex items-center">
+        <img src="./static/65308035b786b391fd8897eb_Logo.png" alt="Salem Cyber" class="h-6 w-auto">
+      </a>
+      <nav class="hidden items-center gap-7 text-sm font-medium md:flex">
+        <a href="https://www.salemcyber.com/solution" class="hover:text-grey900">Solution</a>
+        <a href="./our-team.html" class="hover:text-grey900">Our Team</a>
+        <a href="#contact" class="rounded-full bg-grey900 px-5 py-2 text-white transition hover:bg-accentBlue">Book a demo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="mx-auto max-w-7xl rounded-b-3xl bg-[linear-gradient(135deg,#002d3e,#0c1724)] px-6 pb-20 pt-16 md:pt-24">
+      <div class="mx-auto max-w-4xl text-center">
+        <h1 class="text-balance text-4xl font-semibold leading-tight text-white md:text-6xl">Find the cyber alerts that actually matter</h1>
+        <p class="mx-auto mt-5 max-w-3xl text-lg leading-8 text-white/95 md:text-2xl md:leading-10">Salem is an AI software platform that learns your business context and automatically investigates your cyber alerts.</p>
+      </div>
+    </section>
+
+    <section class="mx-auto grid max-w-7xl items-center gap-10 px-6 pb-16 pt-16 md:grid-cols-2">
+      <img src="./static/alert-triage-automation.png" alt="AI-driven alert triage workflow" class="w-full rounded-xl shadow-sm">
+      <div>
+        <h2 class="text-3xl font-semibold leading-tight text-grey900 md:text-4xl">We <span class="italic">literally</span> do Alert Triage Automation</h2>
+        <p class="mt-5 leading-8">The Salem platform automatically investigates <strong>cyber alerts</strong> from your existing detection tools (EDR, SIEM, XDR, etc.). Salem auto closes false positives and escalates real threats.</p>
+        <a href="https://www.salemcyber.com/solution" class="mt-7 inline-flex items-center gap-2 text-2xl font-medium text-salemGreen transition hover:text-salemGreenHover">
+          <span>See how we do it</span>
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="mx-auto grid max-w-7xl items-center gap-10 px-6 pb-16 md:grid-cols-2">
+      <div class="order-2 md:order-1">
+        <h2 class="text-3xl font-semibold leading-tight text-grey900 md:text-4xl">So you can <span class="text-salemGreen">stay ahead of threats</span></h2>
+        <p class="mt-5 leading-8">Complex enterprises need thousands of cyber alerts to cover Endpoint, Cloud, Network, DLP, and more. Salem finds the threats that require immediate action.</p>
+        <a href="https://www.salemcyber.com/alert-triage-playbook" class="mt-7 inline-flex items-center gap-2 text-xl font-medium text-salemGreen transition hover:text-salemGreenHover">
+          <span>Learn how to investigate alerts</span>
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+      <img src="./static/alert-processing.png" alt="Alert volume reduced to prioritized threats" class="order-1 w-full rounded-xl shadow-sm md:order-2">
+    </section>
+
+    <section class="mx-auto grid max-w-7xl items-center gap-10 px-6 pb-16 md:grid-cols-2">
+      <img src="./static/alert-escalation.png" alt="Threat escalation and notification view" class="w-full rounded-xl shadow-sm">
+      <div>
+        <h2 class="text-3xl font-semibold leading-tight text-grey900 md:text-4xl">And it matters because:</h2>
+        <div class="mt-6 space-y-4">
+          <div>
+            <p class="text-2xl font-semibold text-grey900">CISOs ask...</p>
+            <p>Is my team (and MDR) responding well, consistently?</p>
+          </div>
+          <div>
+            <p class="text-2xl font-semibold text-grey900">Managers want...</p>
+            <p>Shorter time to detect/contain threats.</p>
+          </div>
+          <div>
+            <p class="text-2xl font-semibold text-grey900">Analysts demand...</p>
+            <p>Only relevant and actionable alerts.</p>
+          </div>
+        </div>
+        <a href="https://www.salemcyber.com/case-study" class="mt-7 inline-flex items-center gap-2 rounded-full bg-salemGreen px-6 py-2 text-xl font-medium text-white transition hover:bg-salemGreenHover">
+          <span>Salem case study</span>
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="demo" class="bg-slateBlock py-16">
+      <div class="mx-auto max-w-6xl px-6">
+        <div class="text-center">
+          <h2 class="text-3xl font-semibold text-grey900 md:text-4xl">See Salem in action</h2>
+          <p class="mx-auto mt-4 max-w-3xl leading-8">Take 2 minutes to see how Salem works tirelessly to find real cyber threats and keep your team informed.</p>
+        </div>
+        <div class="mt-8 flex aspect-video items-center justify-center overflow-hidden rounded-xl border border-[#3f5fac59] bg-[linear-gradient(135deg,#edf4fb,#d7e6f6)] shadow-[0_0_18px_rgba(26,19,72,0.15)]">
+          <p class="px-6 text-center text-lg font-semibold text-grey900 md:text-2xl">Interactive Demo Preview</p>
+        </div>
+        <div class="mt-4 text-center">
+          <a href="https://salem.storylane.io/demo/azzdfz5fvob6" target="_blank" rel="noreferrer" class="inline-flex rounded-full bg-salemGreen px-6 py-2 font-medium text-white transition hover:bg-salemGreenHover">
+            Open interactive demo
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16">
+      <div class="mx-auto max-w-6xl px-6">
+        <div class="text-center">
+          <h2 class="text-3xl font-semibold text-grey900 md:text-4xl">Enterprise grade</h2>
+          <p class="mx-auto mt-4 max-w-3xl leading-8">With Salem, you can rest assured that your cybersecurity operations are efficient and in full compliance with industry and legal standards.</p>
+        </div>
+        <div class="mt-10 grid gap-6 md:grid-cols-3">
+          <article class="rounded-xl border border-line p-6 shadow-sm">
+            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-[#e5f3f5] text-lg">✓</div>
+            <h3 class="mt-4 text-xl font-semibold text-grey900">SOC 2 Compliant</h3>
+            <p class="mt-2">Compliant for both SOC 2 Type 1 and SOC 2 Type 2.</p>
+          </article>
+          <article class="rounded-xl border border-line p-6 shadow-sm">
+            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-[#e5f3f5] text-lg">⧉</div>
+            <h3 class="mt-4 text-xl font-semibold text-grey900">Microsoft Partnership</h3>
+            <p class="mt-2">We are currently in the Azure marketplace with the Sentinel marketplace coming soon.</p>
+          </article>
+          <article class="rounded-xl border border-line p-6 shadow-sm">
+            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-[#e5f3f5] text-lg">🔒</div>
+            <h3 class="mt-4 text-xl font-semibold text-grey900">Local data processing</h3>
+            <p class="mt-2">We deploy in your cloud environment so your data remains your data.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="bg-accentBlue py-16 text-white">
+      <div class="mx-auto grid max-w-6xl gap-10 px-6 md:grid-cols-2">
+        <div>
+          <h2 class="text-3xl font-semibold text-white md:text-4xl">See Salem in action</h2>
+          <p class="mt-4 leading-8">Your team does not have time for low and medium severity alerts. Let Salem do the heavy lifting and only send you the alerts that matter.</p>
+          <div class="mt-8 space-y-3">
+            <p>info@salemcyber.com</p>
+            <p>+1 336-750-6542</p>
+            <p><a href="https://twitter.com/salemcyber" class="text-white hover:underline">@salemcyber</a></p>
+            <p><a href="https://www.linkedin.com/company/salemcyber/" class="text-white hover:underline">salemcyber</a></p>
+          </div>
+        </div>
+        <form class="rounded-xl bg-transparent p-1">
+          <h3 class="text-xl font-semibold text-white">Schedule a demo</h3>
+          <div class="mt-5 space-y-4">
+            <div>
+              <label for="name" class="mb-2 block text-sm font-medium text-white">Your name</label>
+              <input id="name" type="text" placeholder="What should we call you?" class="w-full rounded border border-inputBorder bg-transparent px-3 py-3 text-inputText placeholder-inputText outline-none focus:border-salemGreen" required>
+            </div>
+            <div>
+              <label for="email" class="mb-2 block text-sm font-medium text-white">Email</label>
+              <input id="email" type="email" placeholder="me@company.com" class="w-full rounded border border-inputBorder bg-transparent px-3 py-3 text-inputText placeholder-inputText outline-none focus:border-salemGreen" required>
+            </div>
+            <div>
+              <label for="message" class="mb-2 block text-sm font-medium text-white">Message (Optional)</label>
+              <textarea id="message" rows="4" placeholder="Your message..." class="w-full rounded border border-inputBorder bg-transparent px-3 py-3 text-inputText placeholder-inputText outline-none focus:border-salemGreen"></textarea>
+            </div>
+            <button type="submit" class="w-full rounded bg-salemGreen px-4 py-3 font-medium text-white transition hover:bg-salemGreenHover">Submit message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#f5f7f7] py-14 text-bodyText">
+    <div class="mx-auto grid max-w-7xl gap-10 px-6 md:grid-cols-4">
+      <div>
+        <img src="./static/65308035b786b391fd8897eb_Logo.png" alt="Salem Cyber" class="h-6 w-auto">
+        <p class="mt-4 text-sm text-inputText">Salem, Inc. 2024. All rights reserved.</p>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold uppercase tracking-wide text-grey900">Product</h4>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li><a href="https://www.salemcyber.com/solution" class="hover:text-salemGreen">AI Cyber Analyst</a></li>
+          <li><a href="https://www.salemcyber.com/case-study" class="hover:text-salemGreen">Salem in Action</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold uppercase tracking-wide text-grey900">Resources</h4>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li><a href="#contact" class="hover:text-salemGreen">Contact Us</a></li>
+          <li><a href="https://www.salemcyber.com/privacy" class="hover:text-salemGreen">Privacy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold uppercase tracking-wide text-grey900">Company</h4>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li><a href="./our-team.html" class="hover:text-salemGreen">Our Team</a></li>
+          <li><a href="./our-team.html#w-tabs-0-data-w-pane-1" class="hover:text-salemGreen">Advisors</a></li>
+          <li><a href="./our-team.html#w-tabs-0-data-w-pane-2" class="hover:text-salemGreen">Alumni</a></li>
+          <li><a href="https://www.youtube.com/@salemcyber" class="hover:text-salemGreen">YouTube</a></li>
+          <li><a href="https://www.instagram.com/salemcyber/" class="hover:text-salemGreen">Instagram</a></li>
+          <li><a href="https://twitter.com/SalemCyber" class="hover:text-salemGreen">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div id="cookie-banner" class="fixed inset-x-0 bottom-0 z-50 hidden border-t border-line bg-white px-4 py-4 shadow-[0_-8px_24px_rgba(12,23,36,0.12)] md:px-6">
+    <div class="mx-auto flex max-w-7xl flex-col items-start gap-3 md:flex-row md:items-center md:justify-between">
+      <p class="text-sm text-bodyText">
+        By using this website, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+      </p>
+      <div class="flex items-center gap-2">
+        <button id="cookie-deny" type="button" class="rounded border border-line px-4 py-2 text-sm font-medium text-grey900 hover:bg-whiteSmoke">Deny</button>
+        <button id="cookie-accept" type="button" class="rounded bg-grey900 px-4 py-2 text-sm font-medium text-white hover:bg-accentBlue">Accept All</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      var key = "salem_cookie_consent";
+      var banner = document.getElementById("cookie-banner");
+      var accept = document.getElementById("cookie-accept");
+      var deny = document.getElementById("cookie-deny");
+      if (!banner || !accept || !deny) return;
+
+      var choice = localStorage.getItem(key);
+      if (!choice) {
+        banner.classList.remove("hidden");
+      }
+
+      function closeBanner(value) {
+        localStorage.setItem(key, value);
+        banner.classList.add("hidden");
+      }
+
+      accept.addEventListener("click", function () {
+        closeBanner("accepted");
+      });
+      deny.addEventListener("click", function () {
+        closeBanner("denied");
+      });
+    })();
+  </script>
+</body>
+</html>
