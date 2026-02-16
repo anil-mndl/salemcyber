@@ -36,7 +36,7 @@
 </head>
 <body class="bg-white font-sans text-bodyText antialiased">
   <div class="bg-salemOrange px-4 py-2 text-center text-sm text-grey900">
-    <a href="https://www.salemcyber.com/post/salem-3-0-salem-works-where-you-work" class="font-semibold hover:underline">Meet Salem 3.0! Learn how we&apos;re improving SOC workflows and reducing MTTR</a>
+    <a href="https://www.salemcyber.com/post/salem-3-0-salem-works-where-you-work" class="font-semibold hover:underline">Salem Cyber is in the formal dissolution process.</a>
   </div>
 
   <header class="sticky top-0 z-30 border-b border-line bg-white/95 backdrop-blur">
@@ -46,7 +46,6 @@
       </a>
       <nav class="hidden items-center gap-7 text-sm font-medium md:flex">
         <a href="./our-team.html" class="hover:text-grey900">Our Team</a>
-        <a href="#contact" class="rounded-full bg-grey900 px-5 py-2 text-white transition hover:bg-accentBlue">Book a demo</a>
       </nav>
     </div>
   </header>
@@ -59,7 +58,7 @@
       </div>
     </section>
 
-    <section class="mx-auto grid max-w-7xl items-center gap-10 px-6 pb-16 pt-16 md:grid-cols-2">
+    <section id="salem-in-action" class="mx-auto grid max-w-7xl items-center gap-10 px-6 pb-16 pt-16 md:grid-cols-2">
       <img src="./static/alert-triage-automation.png" alt="AI-driven alert triage workflow" class="w-full rounded-xl shadow-sm">
       <div>
         <h2 class="text-3xl font-semibold leading-tight text-grey900 md:text-4xl">We <span class="italic">literally</span> do Alert Triage Automation</h2>
@@ -160,7 +159,7 @@
           </div>
         </div>
         <form class="rounded-xl bg-transparent p-1">
-          <h3 class="text-xl font-semibold text-white">Schedule a demo</h3>
+          <h3 class="text-xl font-semibold text-white">Contact Us</h3>
           <div class="mt-5 space-y-4">
             <div>
               <label for="name" class="mb-2 block text-sm font-medium text-white">Your name</label>
@@ -186,11 +185,15 @@
       <div>
         <img src="./static/65308035b786b391fd8897eb_Logo.png" alt="Salem Cyber" class="h-6 w-auto">
         <p class="mt-4 text-sm text-inputText">Salem, Inc. 2024. All rights reserved.</p>
+        <div class="mt-4 space-y-2 text-sm text-bodyText">
+          <p>Top Startup to Watch<br>NC Tech Awards 2022</p>
+          <p>Cyber Innovation Award Finalist<br>NC Tech Awards 2022</p>
+        </div>
       </div>
       <div>
         <h4 class="text-sm font-semibold uppercase tracking-wide text-grey900">Product</h4>
         <ul class="mt-4 space-y-2 text-sm">
-          <li><a href="https://www.salemcyber.com/case-study" class="hover:text-salemGreen">Salem in Action</a></li>
+          <li><a href="#salem-in-action" class="hover:text-salemGreen">Salem in Action</a></li>
         </ul>
       </div>
       <div>
@@ -204,8 +207,6 @@
         <h4 class="text-sm font-semibold uppercase tracking-wide text-grey900">Company</h4>
         <ul class="mt-4 space-y-2 text-sm">
           <li><a href="./our-team.html" class="hover:text-salemGreen">Our Team</a></li>
-          <li><a href="./our-team.html#w-tabs-0-data-w-pane-1" class="hover:text-salemGreen">Advisors</a></li>
-          <li><a href="./our-team.html#w-tabs-0-data-w-pane-2" class="hover:text-salemGreen">Alumni</a></li>
           <li><a href="https://www.youtube.com/@salemcyber" class="hover:text-salemGreen">YouTube</a></li>
           <li><a href="https://www.instagram.com/salemcyber/" class="hover:text-salemGreen">Instagram</a></li>
           <li><a href="https://twitter.com/SalemCyber" class="hover:text-salemGreen">Twitter</a></li>
@@ -213,42 +214,5 @@
       </div>
     </div>
   </footer>
-  <div id="cookie-banner" class="fixed inset-x-0 bottom-0 z-50 hidden border-t border-line bg-white px-4 py-4 shadow-[0_-8px_24px_rgba(12,23,36,0.12)] md:px-6">
-    <div class="mx-auto flex max-w-7xl flex-col items-start gap-3 md:flex-row md:items-center md:justify-between">
-      <p class="text-sm text-bodyText">
-        By using this website, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
-      </p>
-      <div class="flex items-center gap-2">
-        <button id="cookie-deny" type="button" class="rounded border border-line px-4 py-2 text-sm font-medium text-grey900 hover:bg-whiteSmoke">Deny</button>
-        <button id="cookie-accept" type="button" class="rounded bg-grey900 px-4 py-2 text-sm font-medium text-white hover:bg-accentBlue">Accept All</button>
-      </div>
-    </div>
-  </div>
-  <script>
-    (function () {
-      var key = "salem_cookie_consent";
-      var banner = document.getElementById("cookie-banner");
-      var accept = document.getElementById("cookie-accept");
-      var deny = document.getElementById("cookie-deny");
-      if (!banner || !accept || !deny) return;
-
-      var choice = localStorage.getItem(key);
-      if (!choice) {
-        banner.classList.remove("hidden");
-      }
-
-      function closeBanner(value) {
-        localStorage.setItem(key, value);
-        banner.classList.add("hidden");
-      }
-
-      accept.addEventListener("click", function () {
-        closeBanner("accepted");
-      });
-      deny.addEventListener("click", function () {
-        closeBanner("denied");
-      });
-    })();
-  </script>
 </body>
 </html>
